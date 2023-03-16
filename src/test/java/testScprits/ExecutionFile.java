@@ -1,4 +1,4 @@
-package testScprits;
+package testScripts;
 
 import java.io.FileReader;
 import java.io.IOException;
@@ -21,12 +21,11 @@ import com.opencsv.exceptions.CsvValidationException;
 import Pages.CartPage;
 import Pages.HomePage;
 import Pages.PurchasePage;
-import Pages.LoginPage;
-
+import Pages.LogInPage;
 import base.TestBase;
 
 public class ExecutionFile extends TestBase {
-	LoginPage login;
+	LogInPage login;
 	HomePage home;
 	CartPage cart;
 	PurchasePage order;
@@ -40,14 +39,14 @@ public class ExecutionFile extends TestBase {
 	
 	
 	@Test(priority=1)
-	public void Login()
+	public void Login() throws InterruptedException
 	{
 		wait= new WebDriverWait(driver, Duration.ofSeconds(30));
-		login=new LoginPage();
+		login=new LogInPage();
 		home=new HomePage();
 		home.login.click();
 		login.login(prop.getProperty("uname"), prop.getProperty("pass"));
-		Assert.assertEquals(home.welcome.getText(),"Welcome Vasuki5456");			
+		Assert.assertEquals(home.welcome.getText(),"Welcome kekran");			
 	}
 	
 	@Test(dataProvider="data",priority=2)
