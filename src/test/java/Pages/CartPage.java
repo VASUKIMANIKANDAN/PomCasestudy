@@ -50,7 +50,7 @@ public class CartPage extends TestBase{
 		
 		wait= new WebDriverWait(driver, Duration.ofSeconds(30));
 		gotocart.click();
-		
+		Thread.sleep(3000);
 		String totalp=price.getText();
 		int total= Integer.parseInt(totalp);
 		System.out.println(total);
