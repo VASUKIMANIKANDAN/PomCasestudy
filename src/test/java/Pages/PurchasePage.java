@@ -38,7 +38,6 @@ public class PurchasePage extends TestBase {
 	@FindBy(xpath="//button[contains(text(),'Purchase')]")
 	WebElement purchase;
 	
-	
 	@FindBy(xpath="//button[text()='OK']")
 	public WebElement accept;
 	
@@ -53,7 +52,8 @@ public class PurchasePage extends TestBase {
 	{
 		wait=new WebDriverWait(driver, Duration.ofSeconds(30));
 		
-		name.sendKeys("Vasuki");		
+		Thread.sleep(2000);
+		name.sendKeys("sanjay");		
 		country.sendKeys("country");
 		city.sendKeys("city");
 		card.sendKeys("card");
