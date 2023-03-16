@@ -58,7 +58,7 @@ public class CartPage extends TestBase{
 		//Thread.sleep(5000);
 		String totalp1= price1.getText();
 		int total1= Integer.parseInt(totalp1);
-		System.out.println(totalp1);
+		//System.out.println(totalp1);
 		
 		return (total>total1);
 	}
