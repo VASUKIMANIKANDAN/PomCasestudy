@@ -55,7 +55,7 @@ public class CartPage extends TestBase{
 		int total= Integer.parseInt(totalp);
 		System.out.println(total);
 		delete.click();
-		Thread.sleep(5000);
+		//Thread.sleep(5000);
 		String totalp1= price1.getText();
 		int total1= Integer.parseInt(totalp1);
 		System.out.println(totalp1);
