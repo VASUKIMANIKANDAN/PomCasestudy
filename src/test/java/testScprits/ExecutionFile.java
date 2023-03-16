@@ -1,4 +1,4 @@
-package testScripts;
+package testScprits;
 
 import java.io.FileReader;
 import java.io.IOException;
@@ -21,11 +21,11 @@ import com.opencsv.exceptions.CsvValidationException;
 import Pages.CartPage;
 import Pages.HomePage;
 import Pages.PurchasePage;
-import Pages.LogInPage;
+import Pages.LoginPage;
 import base.TestBase;
 
 public class ExecutionFile extends TestBase {
-	LogInPage login;
+	LoginPage login;
 	HomePage home;
 	CartPage cart;
 	PurchasePage order;
