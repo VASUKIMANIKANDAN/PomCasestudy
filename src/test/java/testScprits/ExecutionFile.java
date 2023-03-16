@@ -42,11 +42,11 @@ public class ExecutionFile extends TestBase {
 	public void Login() throws InterruptedException
 	{
 		wait= new WebDriverWait(driver, Duration.ofSeconds(30));
-		login=new LogInPage();
+		login=new LoginPage();
 		home=new HomePage();
 		home.login.click();
 		login.login(prop.getProperty("uname"), prop.getProperty("pass"));
-		Assert.assertEquals(home.welcome.getText(),"Welcome kekran");			
+		Assert.assertEquals(home.welcome.getText(),"Welcome Vasuki5456");			
 	}
 	
 	@Test(dataProvider="data",priority=2)
